@@ -1,0 +1,4 @@
+{
+    "chat.utilityModel": "ollama/gemma4:12b",
+    "chat.utilitySmallModel": "ollama/gemma4:latest"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "theia-server-app",
+  "version": "1.0.0",
+  "description": "Theia IDE server on devLXC",
+  "license": "EPL-2.0",
+  "dependencies": {
+    "@theia/core": "1.53.0",
+    "@theia/filesystem": "1.53.0",
+    "@theia/editor": "1.53.0",
+    "@theia/preferences": "1.53.0",
+    "@theia/terminal": "1.53.0"
+  },
+  "devDependencies": {
+    "@theia/cli": "1.53.0"
+  },
+  "theia": {
+    "target": "browser",
+    "backend": {
+      "config": {},
+      "@theia/core/lib/node/main": {}
+    }
+  }
+}
