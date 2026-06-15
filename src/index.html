@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Network - Hub</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌐 Local Network Hub</h1>
+            <p class="subtitle">Welcome to your local services network</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Development Tools Section -->
+            <section class="services-section">
+                <h2>🛠️ Development Tools</h2>
+                <div class="services-grid">
+                    <a href="http://localhost:8024" class="service-card">
+                        <div class="service-icon">📝</div>
+                        <h3>Theia IDE</h3>
+                        <p>Web-based code editor and development environment</p>
+                        <span class="port-badge">:8024</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Network Services Section -->
+            <section class="services-section">
+                <h2>🔗 Network Services</h2>
+                <div class="services-grid">
+                    <div class="service-card placeholder">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Service 1</h3>
+                        <p>Add your network services here</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                    <div class="service-card placeholder">
+                        <div class="service-icon">📊</div>
+                        <h3>Service 2</h3>
+                        <p>Configure in index.html</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                    <div class="service-card placeholder">
+                        <div class="service-icon">🔐</div>
+                        <h3>Service 3</h3>
+                        <p>More services coming soon</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Projects Section -->
+            <section class="services-section">
+                <h2>🌟 Web Projects</h2>
+                <div class="services-grid">
+                    <div class="service-card placeholder">
+                        <div class="service-icon">💻</div>
+                        <h3>Project 1</h3>
+                        <p>Your first web project will appear here</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                    <div class="service-card placeholder">
+                        <div class="service-icon">🚀</div>
+                        <h3>Project 2</h3>
+                        <p>Add your projects as they're deployed</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links Section -->
+            <section class="services-section">
+                <h2>📋 Quick Info</h2>
+                <div class="info-box">
+                    <p><strong>Network IP:</strong> 192.168.0.24 (or access via localhost)</p>
+                    <p><strong>Hub Address:</strong> localhost:8080</p>
+                    <p><strong>Last Updated:</strong> <span id="last-updated"></span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Local Network Hub • <a href="#" title="This is a local network landing page">Hosted Locally</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Update last modified time
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    </script>
+</body>
+</html>
