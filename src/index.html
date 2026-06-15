@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Network - Hub</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌐 Local Network Hub</h1>
+            <p class="subtitle">Welcome to your local services network</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Development Tools Section -->
+            <section class="services-section">
+                <h2>🛠️ Development Tools</h2>
+                <div class="services-grid">
+                    <a href="http://192.168.0.24:8024" class="service-card">
+                        <div class="service-icon">📝</div>
+                        <h3>Theia IDE</h3>
+                        <p>Web-based code editor and development environment</p>
+                        <span class="port-badge">:8024</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Network Services Section -->
+            <section class="services-section">
+                <h2>🔗 Network Services</h2>
+                <div class="services-grid">
+                    <a href="https://192.168.0.2:8006/#v1:0:18:4:5::::::5" class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Proxmox</h3>
+                        <p>Virtualization Management</p>
+                        <span class="port-badge">:8006</span>
+                    </a>
+                    <a href="http://192.168.0.30:8123" class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>Home Assistant</h3>
+                        <p>Smart home automation system</p>
+                        <span class="port-badge">:8123</span>
+                    </a>
+                    <a href="http://192.168.0.1" class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>TP-Link Router</h3>
+                        <p>Network Gateway</p>
+                        <span class="port-badge">:80</span>
+                    </a>
+                    <a href="http://192.168.0.103:8090/#/dashboard" class="service-card">
+                        <div class="service-icon">💾</div>
+                        <h3>OpenMediaVault</h3>
+                        <p>NAS & Storage Management</p>
+                        <span class="port-badge">:8090</span>
+                    </a>
+                    <a href="https://192.168.0.103:9443/#!/home" class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h3>Portainer</h3>
+                        <p>Docker Container Management</p>
+                        <span class="port-badge">:9443</span>
+                    </a>
+                    <a href="http://192.168.0.103/admin/" class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Pi-hole</h3>
+                        <p>Network Ad Blocker</p>
+                        <span class="port-badge">:80</span>
+                    </a>
+                    <a href="http://192.168.0.19/" class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>SLZB-MR4</h3>
+                        <p>Zigbee Bridge</p>
+                        <span class="port-badge">:80</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Web Projects Section -->
+            <section class="services-section">
+                <h2>🌟 Web Projects</h2>
+                <div class="services-grid">
+                    <div class="service-card placeholder">
+                        <div class="service-icon">💻</div>
+                        <h3>Project 1</h3>
+                        <p>Your first web project will appear here</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                    <div class="service-card placeholder">
+                        <div class="service-icon">🚀</div>
+                        <h3>Project 2</h3>
+                        <p>Add your projects as they're deployed</p>
+                        <span class="port-badge">:xxxx</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links Section -->
+            <section class="services-section">
+                <h2>📋 Quick Info</h2>
+                <div class="info-box">
+                    <p><strong>Network IP:</strong> 192.168.0.24 (or access via localhost)</p>
+                    <p><strong>Hub Address:</strong> localhost:8080</p>
+                    <p><strong>Last Updated:</strong> <span id="last-updated"></span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Local Network Hub • <a href="#" title="This is a local network landing page">Hosted Locally</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Update last modified time
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    </script>
+</body>
+</html>

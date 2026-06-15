@@ -1,0 +1,16 @@
+{
+  "name": "local-network-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for local network services hub",
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": ["landing-page", "network", "local-services"],
+  "author": "Thomas",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
