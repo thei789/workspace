@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 8080;
-const HOST = 'localhost';
+const HOST = '0.0.0.0';
 
 const server = http.createServer((req, res) => {
   let filePath = req.url === '/' ? '/src/index.html' : req.url;
