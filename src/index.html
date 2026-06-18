@@ -9,7 +9,12 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>🌐 Local Network Hub</h1>
+            <div class="header-controls">
+                <h1>🌐 Local Network Hub</h1>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
             <p class="subtitle">Welcome to your local services network</p>
         </header>
 
@@ -120,6 +125,30 @@
             hour: '2-digit',
             minute: '2-digit'
         });
+
+        // Theme management
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Load saved theme or use system preference
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            applyTheme(theme);
+        }
+
+        function applyTheme(theme) {
+            htmlElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = htmlElement.getAttribute('data-theme') || 'light';
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        initTheme();
     </script>
 </body>
 </html>
